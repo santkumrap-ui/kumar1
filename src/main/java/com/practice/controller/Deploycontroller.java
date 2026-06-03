@@ -27,11 +27,10 @@ public class Deploycontroller {
 	
 	private Deployservice deployservice;
 	
-	@GetMapping("/all")
+	@GetMapping("/al")
 	public ResponseEntity<List<Deploy>> getAllDeploys(){
 		
 		List<Deploy> deploys= deployservice.getAlldeploy();
-		
 		return new ResponseEntity<>(deploys, HttpStatus.OK);
 		
 		
