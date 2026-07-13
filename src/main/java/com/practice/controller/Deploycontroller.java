@@ -27,7 +27,7 @@ public class Deploycontroller {
 	
 	private Deployservice deployservice;
 	
-	@GetMapping("/al")
+	@GetMapping("/alk")
 	public ResponseEntity<List<Deploy>> getAllDeploys(){
 		
 		List<Deploy> deploys= deployservice.getAlldeploy();
